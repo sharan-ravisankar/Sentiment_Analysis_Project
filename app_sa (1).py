@@ -27,6 +27,8 @@ st.write("Enter any text or customer review below to analyze its **sentiment** u
 
 user_input = st.text_area("💬 Enter text here:", height=150, placeholder="Type a review or feedback...")
 
+print(user_input)
+
 if st.button("🔍 Analyze Sentiment"):
     if user_input.strip() == "":
         st.warning("Please enter some text to analyze.")
